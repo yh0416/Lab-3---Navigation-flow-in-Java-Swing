@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="972.0" prefWidth="850.0"
+    xmlns="http://javafx.com/javafx/8"
+    xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="controller.PatientReviewScreenController">
+   <children>
+      <SplitPane dividerPositions="0.5" prefHeight="972.0" prefWidth="850.0">
+        <items>
+          <AnchorPane maxHeight="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="1000.0" prefWidth="0.0">
+               <children>
+                  <Label layoutX="48.0" layoutY="36.0" prefHeight="49.0" prefWidth="224.0" text="First name">
+                     <font>
+                        <Font name="Baskerville Old Face" size="33.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="48.0" layoutY="134.0" prefHeight="49.0" prefWidth="224.0" text="Last name">
+                     <font>
+                        <Font name="Baskerville Old Face" size="33.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="48.0" layoutY="220.0" prefHeight="49.0" prefWidth="224.0" text="age">
+                     <font>
+                        <Font name="Baskerville Old Face" size="33.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="48.0" layoutY="319.0" prefHeight="49.0" prefWidth="224.0" text="email">
+                     <font>
+                        <Font name="Baskerville Old Face" size="33.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="48.0" layoutY="412.0" prefHeight="49.0" prefWidth="224.0" text="message">
+                     <font>
+                        <Font name="Baskerville Old Face" size="33.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="48.0" layoutY="507.0" prefHeight="49.0" prefWidth="224.0" text="patient type">
+                     <font>
+                        <Font name="Baskerville Old Face" size="33.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="48.0" layoutY="638.0" prefHeight="49.0" prefWidth="224.0" text="photo">
+                     <font>
+                        <Font name="Baskerville Old Face" size="33.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="submitButton" layoutX="48.0" layoutY="803.0" text="Submit">
+                     <font>
+                        <Font name="Baskerville Old Face" size="29.0" />
+                     </font></Button>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="970.0" prefWidth="774.0">
+               <children>
+                  <TextField fx:id="firstnamefield" layoutX="34.0" layoutY="43.0" />
+                  <ComboBox fx:id="patientTypeComboBox" layoutX="43.0" layoutY="507.0" prefHeight="51.0" prefWidth="287.0" />
+                  <ImageView fx:id="photoImageView" fitHeight="150.0" fitWidth="287.0" layoutX="50.0" layoutY="617.0" pickOnBounds="true" preserveRatio="true" />
+                  <TextField fx:id="lastnameField" layoutX="34.0" layoutY="122.0" />
+                  <TextField fx:id="agefField" layoutX="34.0" layoutY="212.0" />
+                  <TextField fx:id="emailField" layoutX="34.0" layoutY="311.0" />
+                  <TextField fx:id="messageField" layoutX="34.0" layoutY="408.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
